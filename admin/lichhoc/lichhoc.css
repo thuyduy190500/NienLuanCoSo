@@ -1,0 +1,183 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 210px;
+  /* background-color: #f1f1f1; */
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(145, 135, 187, 0.3);
+}
+.sidebar-user  a{
+  color: black;
+  /* padding: 16px; */
+}
+
+.sidebar-content a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  /* background-color: #04AA6D; */
+  background-color: rgb(228, 52, 52);
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-content a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+}
+  
+  div.content {
+    margin-left: 250px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+/* ICON */
+.title-sidebar{
+  height: 68px ;
+  font-family: cursive;
+  font-size: 25px;
+  text-align: center;
+  padding: 12px 0;
+  text-shadow: 3px 3px 3px rgb(90, 143, 187);
+}
+.setting{
+  padding: 0 6px;
+  font-size: 18px;
+  color: #d1762b;
+}
+.fa-pencil-alt:hover,.fa-trash-alt:hover{
+  color: red;
+}
+#icon-setting{
+  padding-left: 22px;
+}
+
+.tbl-title{
+  background-color: rgba(65, 44, 156, 0.5);
+  /* background-color: rgba(250, 4, 4, 0.5); */
+
+  color: black;
+  font-size: 17px;
+}
+.content-title{
+  text-align: center;
+  padding-top:7px;
+  font-size:25px;
+   color:#d61425;
+   font-weight: bold;
+}
+
+
+
+  
+/* dropdown */
+
+ .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  height: 48px;
+}
+.dropdown-btn:hover{
+  border: 2px solid black;
+
+}
+
+.dropdown-container a{
+  text-decoration: none;
+}
+.dropdown-container a:hover{
+  text-decoration: none;
+}
+.dropdown-container {
+  display: none;
+  margin-left: 20px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 5px;
+  font-size: 27px;
+}
+
+
+/* DROPDOWN MENU LỊCH HỌC */
+.dropdown{
+    padding: 23px 15px 0 0;
+}
+.dropbtn {
+    background-color: #535252;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    min-width: 250px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #c2c2c2
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+  
+  .dropdown:hover a{
+    text-decoration: none;
+  }
+

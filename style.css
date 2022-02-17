@@ -1,0 +1,493 @@
+:root{
+    --color-main: rgb(195, 217, 238);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+
+}
+
+
+                        /* HEADER  */                      
+/* HEADER */
+.navbar{
+    background-color: var(--color-main);
+}
+/*slider*/
+.slider{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.slider img{
+    width: 100% ;
+    height: 480px;
+}
+.slider .mySlides{
+    display: none;
+}
+
+/* REASON */
+.reason{
+    padding-top: 70px;
+    text-align: center;
+}
+.reason h1{
+    color: rgb(192, 67, 67);
+}
+.reason-list{
+    padding-top: 30px;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
+.reason-item{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    float: left;
+    margin: 20px;
+    font-size: 23px;
+}
+.reason-item a{
+    text-decoration: none;
+    color: rgb(50, 78, 119);
+}
+.reason-item a:hover{
+    color: rgb(190, 16, 3);
+}
+.reason  .fas ,.far{
+    font-size: 45px;
+    color:rgb(89, 147, 201);
+}
+
+
+/* cur */
+.cur h1{
+    text-align: center;
+    color: rgb(6, 71, 124);
+}
+.cur-list{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.cur-content-item{
+    width: 32%;
+    height: auto;
+    background-color: rgb(215, 239, 250);
+    margin: 0  auto;
+    font-size: 14px;
+
+}
+.cur-item {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .cur-item:hover .cur-img {
+    opacity: 0.8; /*chỉnh độ mờ khi hover*/
+    background-color: rgba(212, 221, 221, 0.1);
+  }
+  
+  .cur-item:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: white;
+    padding: 16px 32px;
+  }
+  .text a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 17px;
+  }
+#cur-title{
+    text-align: center;
+    font-size: 25px;
+}
+  .cur-text{
+      margin-left: 10px;
+  }
+.cur-text li{
+    list-style: none;
+    font-size: 15px;
+    color: black;
+}
+
+
+/* FORM-REGISTER */
+.register-course-img{
+    width: 100%;
+    height: 620px;
+    margin-top: 10px;
+}
+.register-course-img img{
+    width: 100%;
+    height: 620px;
+}
+#myForm{
+    width: 400px;
+    height: 430px;
+    background-color: rgba(167, 166, 166, 0.1);
+    line-height: 20px;
+    position: relative;
+    bottom: 600px;
+
+}
+#myForm h2{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    color: crimson;
+}
+#input-form{
+    width: 320px;
+    height: 32px;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+#myForm td{
+    line-height: 50px;
+}
+#myForm input{
+    padding-left: 5px;
+}
+#myForm table{
+    margin-left: 40px;
+    margin-top: 30px;
+
+}
+.input-form-btn{
+    width: 50px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    background-color: crimson;
+    font-weight: bold;
+    margin-left: 160px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+
+
+
+ /* FOOTER */
+#footer{
+    width: 100%;
+    position: relative;
+    background-color: rgba(96, 132, 168, 0.63);
+}
+
+.footer-center{
+    padding: 15px 0;
+    /* width: 100%; */
+    margin: 0 180px ;
+}
+.footer-tel, .footer-addr  {
+    margin:0 50px;
+    width: 250px;
+}
+.footer-icon{
+    padding-left: 50px;
+}
+.footer-tel{
+    width: 190px;
+    padding-right: 20px;
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+}
+.footer-tel li{
+    display: inline-block;
+    font-size: 30px;
+    color: sienna;
+}
+
+.footer-tel .fas {
+    font-size: 25px;
+    color: sienna;
+}
+.footer-addr{
+    width: 250px;
+    display: inline-block;
+    position: relative;
+    top: 9px;  
+    line-height: 25px;
+}
+.footer-addr .fas{
+    color: black;
+    font-size: 19px;
+}
+
+.footer-icon {
+    display: inline-block;
+    position: relative;
+    bottom: 60px;
+}
+.footer-icon li{
+    display: inline-block;
+    font-size: 25px;
+    padding: 0 7px;
+}
+/* footer bottom */
+.footer-bottom{
+    text-align:center;
+    padding:20px;
+    font-size:18px;
+}
+    
+/* MODAL */
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    display: none;
+    
+}
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content{
+    width:300px;
+    height: 370px;
+    position: relative; /*them vao de su dung z-index*/
+    margin: auto;
+    /* background-color: white; */
+    background-color:white;
+    z-index: 200;
+    top: 200px;
+    box-shadow: 
+        0px 0px 0px 5px rgba(107, 156, 165, 0.589), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+    border-radius: 5px;
+    padding: 20px 30px;
+
+}
+.modal1-content{
+    width:300px;
+    height: 300px;
+    position: relative; /*them vao de su dung z-index*/
+    margin: auto;
+    /* background-color: white; */
+    background-color:white;
+    z-index: 200;
+    top: 200px;
+    box-shadow: 
+        0px 0px 0px 5px rgba(107, 156, 165, 0.589), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+    border-radius: 5px;
+    padding: 20px 30px;
+
+}
+
+hr{
+    background-color: rgb(114, 147, 148);
+}
+.modal-form-heading{
+    display: flex;/*nằm ngang*/
+    align-items: center; /*bằng nhau*/
+    justify-content: space-between; /*tao khoang cach*/
+    padding-top: 5px;
+}
+.modal-form-heading h3{
+    font-size: 25px;
+    font-weight: 100;
+    color: rgb(9, 73, 75);
+}
+.modal-form-input{
+    position: relative;
+    top: 10px;
+}
+.modal-form-input input{
+    height: 35px;
+    width: 270px;
+    padding: 0 10px;
+    margin-top: 20px;
+    background-color: rgba(172, 200, 207, 0.3);
+    border: none;
+    border-radius: 5px;
+
+}
+.modal-form-button{
+    padding: 50px;
+}
+.modal-form-button button{
+    height: 35px;
+    width: 180px ;
+    font-size: 17px;
+    background-color: rgb(114, 147, 148);
+    color: white;
+    border:2px solid rgb(42, 93, 95); 
+} 
+.modal-form-button button:hover{
+    background-color: rgb(248, 120, 29);
+    background-color: rgb(9, 94, 105);
+
+}
+.close{
+    float: right;
+    font-size:30px;
+    position: relative;
+    bottom: 20px;
+    left: 30px;
+    border: none;
+    color: rgb(61, 61, 61);
+    width: 30px;
+}
+.close:hover{
+    background-color: rgb(255, 37, 37);
+
+}
+
+
+
+                /* GIOITHIEU */
+
+#home {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    bottom: 16px;
+}
+.achievement{
+    width: 100%;
+    height: 650px;
+    margin-top: 10px;
+}
+
+ #achievement-right img {
+    width: 950px;
+    height: 500px;
+    float: right;
+    position: relative;
+}
+#achievement-left  {
+    width: 580px;
+    height: 600px;
+    position: relative;
+    display: block;
+}
+.list-achievement{
+    height: 400px;
+    display: inline;
+    position: relative;
+}
+.achievement-item{
+    width: 230px;;
+    height: 250px;
+    float: left;
+    background-color: rgb(255, 255, 255) ;
+    transition-property: transform ;
+    position: relative;
+    margin: 15px;
+    box-shadow: 10px 10px 10px 10px rgb(212, 227, 236);
+}
+.achievement-item-img img{
+    width: 230px;;
+    height: 160px;
+}
+.achievement-item-text{
+    margin: 15px;
+    font-family: serif;
+}
+.achievement-item-theme h1{
+    color: rgb(52, 98, 247);
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    margin: 10px;
+}
+.achievement-item-theme p{
+    margin: 10px;
+    font-size: 23px;
+    color: rgb(20, 67, 99);
+
+}
+.text p{
+    width: 60%;
+    position: relative;
+    padding-left: 100px;
+    color: rgb(85, 172, 35);
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    bottom: 150px;
+    font-weight: bold;
+}
+.class{
+    width: 100%;
+    height: 350px;
+    /* margin: 20px 0; */
+}
+.class h1{
+    margin-bottom: 30px;
+}
+#csvc{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(84, 135, 194);
+}
+.imgclass{
+    /* margin: 10px; */
+    width: 370px;
+    height: 270px;
+    border: 2px solid grey;
+}
+.imgclass img{
+    width: 100%;
+    height: 100%px;
+}
+
+/* trang Lịch học */
+.content{
+    width:800px;
+    margin:10px auto; 
+}
+.table td{
+    background-color: rgb(252, 209, 218);
+
+}
+.tbl-title{
+    background-color: rgb(252, 88, 115);
+
+}
+
+
+
+
